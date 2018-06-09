@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import sun.rmi.runtime.NewThreadAction;
-
+import org.openqa.selenium.ElementNotVisibleException;
 import java.util.List;
 import java.util.Set;
 
@@ -84,6 +84,10 @@ public class testSelenium {
 
     }
 
+    public void setDriver(WebDriver driver) {
+        this.driver = driver;
+
+    }
 }
 
 

@@ -10,7 +10,7 @@ import org.openqa.selenium.ElementNotVisibleException;
 import java.util.List;
 import java.util.Set;
 
-public class testSelenium {
+public class Abstract {
     WebDriver driver = new WebDriver() {
         public void get(String url) {
 

@@ -1,10 +1,13 @@
+package stepDefinitions;
+
+import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
-import io.cucumber.datatable.DataTable;
+import io.cucumber.datatable.*;
+import org.openqa.selenium.By;
 
+import java.util.*;
 import java.lang.*;
-import java.util.Map;
-
-import static java.lang.String.format;
+import static java.lang.String.*;
 
 public class stepDefinitions {
 
@@ -41,6 +44,35 @@ public class stepDefinitions {
         }
     }
 
+    @When("I click on the button with the label")
+    public void clickOnButtonLabelled() {
+        By locator = By.xpath("//*[@class='test']//text()='Go'");
+
+    }
+
+    @Given("^there are (\\d+) coffees left in the machine$")
+    public void thereAreCoffeesLeftInTheMachine(int arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @And("^I have deposited (\\d+)/$$")
+    public void iHaveDeposited$(int arg0) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^I should be served a coffee$")
+    public void iShouldBeServedACoffee() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^I press the coffee button$")
+    public void iPressTheCoffeeButton() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 
 }
 
